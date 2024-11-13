@@ -101,7 +101,7 @@
       window.YaHeaderBiddingSettings = {
         biddersMap: adfoxBiddersMap,
         adUnits: adUnits,
-        timeout: userTimeout
+        timeout: userTimeout,
         biddersCpmAdjustmentMap: biddersCpmAdjustmentMap
       };
     </script>
