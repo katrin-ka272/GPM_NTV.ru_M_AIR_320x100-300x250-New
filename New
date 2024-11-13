@@ -54,7 +54,6 @@
         { bidder: "astralab", params: { placementId: "6731fbff6ac583f80e728e3f" } },
       ],
     },
-    {
  ];
       var userTimeout = 1000;
       
