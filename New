@@ -1,61 +1,33 @@
 <script>
-      var adfoxBiddersMap = {
-        myTarget: "867892",
-        betweenDigital: "867894",
-        adriver: "1267778",
-        "adfox_roden-media": "1591857",
-        adfox_mttech: "1551425",
-        adfox_adsmart: "1639577",
-        getintent: "1620836",
-        "adfox_imho-video": "2456220",
-        mediasniper: "2668023",
-        "roxot": "2872335",
-        otclick: "3121955",
-        astralab: "1667446",
-        gnezdo: "2755801",
-      };
+  var adfoxBiddersMap = {
+    myTarget: "867892",
+    betweenDigital: "867894",
+    adriver: "1267778",
+    "adfox_roden-media": "1591857",
+    adfox_mttech: "1551425",
+    adfox_adsmart: "1639577",
+    getintent: "1620836",
+    "adfox_imho-video": "2456220",
+    mediasniper: "2668023",
+    "roxot": "2872335",
+    astralab: "1667446",
+    gnezdo: "2755801",
+    otclick: "3121955",
+  };
 
-       var adUnits = [
-        {
-          codeType: "instream",
-          code: "videocontainer_hb",
-          bids: [
-            { bidder: "adfox_roden-media", params: { p1: "codta", p2: "gjlz" }, adBreakTypes: ["preroll", "midroll", "postroll"] },
-            { bidder: "adfox_mttech", params: { p1: "comze", p2: "gdol" }, adBreakTypes: ["preroll", "midroll", "postroll"] },
-            { bidder: "roxot", params: { placementId: '1604086b-59be-431f-9325-839e3e837534', sendTargetRef: true }, adBreakTypes: ["preroll", "midroll", "postroll"]  },
-            { bidder: "adfox_imho-video", params: { p1: "cynet", p2: "eyit"}, adBreakTypes: ["preroll", "midroll", "postroll"] }
-          ],
-        },
-{
-        // GPM_NTV_M_AIR_300x250
-          code: "adfox_173150183282471870",
-          sizes: [[300, 250]],
-          bids: [
-        { bidder: "myTarget", params: { placementId: "1718078" } },
-        { bidder: "betweenDigital", params: { placementId: "4807123" } },
-        { bidder: "adriver", params: { placementId: "40:GPM_NTV.ru_M_AIR_300x250" } },
-        { bidder: "getintent", params: { placementId: "215_GPM_NTV.ru_M_AIR_300x250" } },
-        { bidder: "buzzoola", params: { placementId: "1280638" } },
-        { bidder: "mediasniper", params: { placementId: "18953" } },
-        { bidder: "astralab", params: { placementId: "6731fc006ac583f80e728e4c" } },
-      ],
- },
-        {
-          //GPM_NTV_M_AIR_320x100
-      code: "adfox_173150190647261870",
-      sizes: [[320, 100]],
+  var adUnits = [
+    {
+      codeType: "instream",
+      code: "videocontainer_hb",
       bids: [
-        { bidder: "myTarget", params: { placementId: "1718076" } },
-        { bidder: "betweenDigital", params: { placementId: "4807122" } },
-        { bidder: "adriver", params: { placementId: "40:GPM_NTV.ru_M_AIR_320x100" } },
-        { bidder: "getintent", params: { placementId: "215_GPM_NTV.ru_M_AIR_320x100" } },
-        { bidder: "buzzoola", params: { placementId: "1280637" } },
-        { bidder: "mediasniper", params: { placementId: "18952" } },
-        { bidder: "astralab", params: { placementId: "6731fbff6ac583f80e728e3f" } },
+        { bidder: "adfox_roden-media", params: { p1: "codta", p2: "gjlz" }, adBreakTypes: ["preroll", "midroll", "postroll"] },
+        { bidder: "adfox_mttech", params: { p1: "comze", p2: "gdol" }, adBreakTypes: ["preroll", "midroll", "postroll"] },
+        { bidder: "roxot", params: { placementId: '1604086b-59be-431f-9325-839e3e837534', sendTargetRef: true }, adBreakTypes: ["preroll", "midroll", "postroll"] },
+        { bidder: "adfox_imho-video", params: { p1: "cynet", p2: "eyit" }, adBreakTypes: ["preroll", "midroll", "postroll"] }
       ],
     },
- ];
- // GPM_Ntv.ru_D_Sidebar-player
+    {
+      // GPM_Ntv.ru_D_Sidebar-player
       code: "adfox_15529136651199965",
       sizes: [[300, 600], [240, 400]],
       bids: [
@@ -91,17 +63,45 @@
         { bidder: "mediasniper", params: { placementId: "3603" } },
       ],
     },
-    ];
-      var userTimeout = 1000;
-      
-      var biddersCpmAdjustmentMap = {
-        adfox_mttech: 0.45,
-      };
+    {
+      //GPM_NTV_M_AIR_320x100
+      code: "adfox_173150190647261870",
+      sizes: [[320, 100]],
+      bids: [
+        { bidder: "myTarget", params: { placementId: "1718076" } },
+        { bidder: "betweenDigital", params: { placementId: "4807122" } },
+        { bidder: "adriver", params: { placementId: "40:GPM_NTV.ru_M_AIR_320x100" } },
+        { bidder: "getintent", params: { placementId: "215_GPM_NTV.ru_M_AIR_320x100" } },
+        { bidder: "buzzoola", params: { placementId: "1280637" } },
+        { bidder: "mediasniper", params: { placementId: "18952" } },
+        { bidder: "astralab", params: { placementId: "6731fbff6ac583f80e728e3f" } },
+      ],
+    },
+    {
+      //GPM_NTV_M_AIR_300x250
+      code: "adfox_173150183282471870",
+      sizes: [[300, 250]],
+      bids: [
+        { bidder: "myTarget", params: { placementId: "1718078" } },
+        { bidder: "betweenDigital", params: { placementId: "4807123" } },
+        { bidder: "adriver", params: { placementId: "40:GPM_NTV.ru_M_AIR_300x250" } },
+        { bidder: "getintent", params: { placementId: "215_GPM_NTV.ru_M_AIR_300x250" } },
+        { bidder: "buzzoola", params: { placementId: "1280638" } },
+        { bidder: "mediasniper", params: { placementId: "18953" } },
+        { bidder: "astralab", params: { placementId: "6731fc006ac583f80e728e4c" } },
+      ],
+    },
+  ];
+  var userTimeout = 1000;
 
-      window.YaHeaderBiddingSettings = {
-        biddersMap: adfoxBiddersMap,
-        adUnits: adUnits,
-        timeout: userTimeout,
-        biddersCpmAdjustmentMap: biddersCpmAdjustmentMap
-      };
-    </script>
+  var biddersCpmAdjustmentMap = {
+    adfox_mttech: 0.45,
+  };
+
+  window.YaHeaderBiddingSettings = {
+    biddersMap: adfoxBiddersMap,
+    adUnits: adUnits,
+    timeout: userTimeout,
+    biddersCpmAdjustmentMap: biddersCpmAdjustmentMap
+  };
+</script>
